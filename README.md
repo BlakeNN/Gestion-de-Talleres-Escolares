@@ -3,9 +3,7 @@ Proyecto de Fin de Año - Tec. Sup. en Desarrollo de Apps y Páginas Web - Insti
 Creado por: Reinert Lucas Iván (BlakeNN) - 1er Año
 
 ## Indice
-1. [Introduccion](#Introduccion)  
-  -[Front-End](#Fron-End)  
-  -[Back-End](#Back-End)
+1. [Introduccion](#Introduccion)
 2. [Instalacion](#Instalacion)
 
 ## Introduccion
@@ -21,20 +19,24 @@ Para elaborarlo use las siguientes tecnologias:
 - MySQL (Base de Datos)
 - Bcrypt (Hasheo de Contraseñas)
 - DotEnv (Variables de Entorno)
-- 
+
 ## Instalacion
 - Instala NodeJS
 - Inicializa el Proyecto  
   ```bash
   npm init
 - Instala los Modulos Necesarios  
-  `npm i express express-session mysql dotenv bcrypt`
+  ```bash
+  npm i express express-session mysql dotenv bcrypt
 - Importa la Base de Datos de la Carpeta "DB" y colocale el nombre que desees
 - Configura las Variables de Entorno:  
-`DB_HOST='localhost'
+```bash
+DB_HOST='localhost'
 DB_USER='root'
 DB_PASS=
 DB_NAME='isesTalleres'
-PORT=3000`
+PORT=3000
+```
 - Inicia tu Base de Datos y Ejecuta el Archivo index.js  
-`node index.js`
+```bash
+node index.js
