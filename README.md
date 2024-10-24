@@ -24,9 +24,9 @@ Para elaborarlo use las siguientes tecnologias:
 ## Instalacion
 -Instala NodeJS
 -Inicializa el Proyecto
-`npm init`
+  `npm init`
 -Instala los Modulos Necesarios
-`npm i express express-session mysql dotenv bcrypt`
+  `npm i express express-session mysql dotenv bcrypt`
 -Importa la Base de Datos de la Carpeta "DB" y colocale el nombre que desees
 -Configura las Variables de Entorno:
 `DB_HOST='localhost'
