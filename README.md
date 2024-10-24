@@ -1,5 +1,6 @@
 # Gestion de Talleres Escolares - Version 1.0
-Proyecto de Fin de Año - Tec. Sup. en Desarrollo de Apps y Páginas Web - Instituto Superior Espiritu Santo - 0405 - Posadas, Misiones, Argentina  
+Proyecto de Fin de Año - Tec. Sup. en Desarrollo de Apps y Páginas Web - Instituto Superior Espiritu Santo - 0405  
+Posadas, Misiones, Argentina  
 Creado por: Reinert Lucas Iván (BlakeNN) - 1er Año  
 **Cualquier recomendacion/mejora que me quieran decir es bienvenida**
 
