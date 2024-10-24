@@ -4,8 +4,8 @@ Creado por: Reinert Lucas Iván (BlakeNN) - 1er Año
 
 ## Indice
 1. [Introduccion](#Introduccion)
-2. [Instalacion](#Instalacion)
-3. [Caracteristicas](#Caracteristicas)
+2. [Caracteristicas](#Caracteristicas)
+3. [Instalacion](#Instalacion)
 
 
 ## Introduccion
