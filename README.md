@@ -7,7 +7,7 @@ Creado por: Reinert Lucas Iván (BlakeNN) - 1er Año
 2. [Caracteristicas](#Caracteristicas)
 3. [Instalacion](#Instalacion)
 
-##Caracteristicas
+## Caracteristicas
 Esta Aplicacion Web esta diseñada para la **Creacion** y **Gestion** de Talleres de Apoyo Escolares
 La misma permite:  
 - Como Alumno:  
