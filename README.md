@@ -4,16 +4,9 @@ Creado por: Reinert Lucas Iván (BlakeNN) - 1er Año
 
 ## Indice
 1. [Introduccion](#Introduccion)
-2. [Caracteristicas](#Caracteristicas)
-3. [Instalacion](#Instalacion)
+2. [Instalacion](#Instalacion)
+3. [Caracteristicas](#Caracteristicas)
 
-## Caracteristicas
-Esta Aplicacion Web esta diseñada para la **Creacion** y **Gestion** de Talleres de Apoyo Escolares
-La misma permite:  
-- Como **Alumno**:  
-Ver y Anotarse a los Talleres disponibles.
-- Como **Profesor**:  
-Ver los Alumnos inscriptos a los Talleres, **Crear** nuevos Talleres, **Editar** los ya existentes y **Eliminarlos**
 
 ## Introduccion
 El siguiente es mi proyecto de fin de año para la Tec. en Apps y Pags Web del ISES.
@@ -28,6 +21,14 @@ Para elaborarlo use las siguientes tecnologias:
 - MySQL (Base de Datos)
 - Bcrypt (Hasheo de Contraseñas)
 - DotEnv (Variables de Entorno)
+
+## Caracteristicas
+Esta Aplicacion Web esta diseñada para la **Creacion** y **Gestion** de Talleres de Apoyo Escolares
+La misma permite:  
+- Como **Alumno**:  
+Ver y Anotarse a los Talleres disponibles.
+- Como **Profesor**:  
+Ver los Alumnos inscriptos a los Talleres, **Crear** nuevos Talleres, **Editar** los ya existentes y **Eliminarlos**
 
 ## Instalacion
 - Instala NodeJS
