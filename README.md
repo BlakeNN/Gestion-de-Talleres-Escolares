@@ -44,11 +44,11 @@ Ver los Alumnos inscriptos a los Talleres, **Crear** nuevos Talleres, **Editar**
 - Importa la Base de Datos de la Carpeta "DB" y colocale el nombre que desees
 - Configura las Variables de Entorno:  
 ```bash
-    DB_HOST='localhost'
-    DB_USER='root'
-    DB_PASS=
-    DB_NAME='isesTalleres'
-    PORT=3000
+  DB_HOST='localhost'
+  DB_USER='root'
+  DB_PASS=
+  DB_NAME='isesTalleres'
+  PORT=3000
 ```
 - Inicia la Base de Datos y Ejecuta el Archivo index.js  
 ```bash
