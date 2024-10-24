@@ -49,3 +49,12 @@ Para elaborarlo use las siguientes tecnologias:
 - Inicia la Base de Datos y Ejecuta el Archivo index.js  
 ```bash
   node index.js
+```
+- Si todo esta en orden, deberias ver esto en tu consola:
+```bash
+  Servidor Escuchando el Puerto 3000
+  http://localhost:3000
+  Conexion Exitosa a la BD
+```
+- Si presionas Ctrl + Click sobre la Segunda linea, abriras tu navegador y deberías de ver esta Pagina:
+![Login-Img](https://github.com/BlakeNN/Gestion-de-Talleres-Escolares/blob/c6241525745d4c061412f20e9bc8912e11d0f4b6/login.png)
