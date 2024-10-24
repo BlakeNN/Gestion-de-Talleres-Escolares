@@ -4,7 +4,16 @@ Creado por: Reinert Lucas Iván (BlakeNN) - 1er Año
 
 ## Indice
 1. [Introduccion](#Introduccion)
-2. [Instalacion](#Instalacion)
+2. [Caracteristicas](#Caracteristicas)
+3. [Instalacion](#Instalacion)
+
+##Caracteristicas
+Esta Aplicacion Web esta diseñada para la *Creacion* y *Gestion* de Talleres de Apoyo Escolares
+La misma permite:  
+- Como Alumno:  
+Ver y Anotarse a los Talleres disponibles.
+- Como Profesor:
+Ver los Alumnos inscriptos a los Talleres, *Crear* nuevos Talleres, *Editar* los ya existentes y *Eliminarlos*
 
 ## Introduccion
 El siguiente es mi proyecto de fin de año para la Tec. en Apps y Pags Web del ISES.
@@ -31,12 +40,12 @@ Para elaborarlo use las siguientes tecnologias:
 - Importa la Base de Datos de la Carpeta "DB" y colocale el nombre que desees
 - Configura las Variables de Entorno:  
 ```bash
-DB_HOST='localhost'
-DB_USER='root'
-DB_PASS=
-DB_NAME='isesTalleres'
-PORT=3000
+  DB_HOST='localhost'
+  DB_USER='root'
+  DB_PASS=
+  DB_NAME='isesTalleres'
+  PORT=3000
 ```
-- Inicia tu Base de Datos y Ejecuta el Archivo index.js  
+- Inicia la Base de Datos y Ejecuta el Archivo index.js  
 ```bash
-node index.js
+  node index.js
