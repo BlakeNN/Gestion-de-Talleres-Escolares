@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumno</title>
+    <link rel="stylesheet" href="/css/alumno.css">
+    <link rel="stylesheet" href="/css/formato.css">
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+</head>
+<body>
+    <header class="head">
+        <section class="logo">
+            <img src="/imgs/logoIses.png" alt="logoIses" title="logoIses">
+        </section>
+        <nav class="txt">
+            <h2>Talleres de Apoyo: Alumno <%= nombre %></h2>
+        </nav>
+    </header>
+    <main class="ppal">
+        <section class="conteiner-talleres cont visible">
+            <h3>Tus Talleres Disponibles:</h3>
+            <section class="arts">
+                <% if (talleresDisp.length > 0) { %>
+                    <% talleresDisp.forEach(function(taller) { %>
+                        <article class="box">
+                            <h4><%= taller.taller %></h4>
+                            <ul class="horario">
+                                <li class="fecha">Fecha: <%= taller.fecha %></li>
+                                <li class="hora">Hora: <%= taller.hora %></li>
+                            </ul>
+                            <button class="btn-taller seeBtn" value="<%= taller.id_taller %>">Anotarse</button>
+                        </article>
+                    <% }) %>
+                <% } else { %>
+                    <p>No hay ningun Taller disponible.</p>
+                <% } %>
+            </section>
+        </section>
+        <section class="anotados cont visible">
+            <h3>Talleres en los que te Anotaste:</h3>
+            <section class="arts">
+                <% if (talleresAnotado.length > 0) { %>
+                    <% talleresAnotado.forEach(function(taller) { %>
+                        <article class="box">
+                            <h4><%= taller.taller %></h4>
+                            <ul class="horario">
+                                <li class="fecha">Fecha: <%= taller.fecha %></li>
+                                <li class="hora">Hora: <%= taller.hora %></li>
+                            </ul>
+                            <!-- <button class="btn-taller">Ver Alumnos</button> -->
+                        </article>
+                    <% }) %>
+                <% } else { %>
+                    <p>No te anotaste a ningun Taller.</p>
+                <% } %>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <span class="copy">España 2729 - Posadas, Misiones - Argentina - Tel: 0376-4434070 - Copyright © 2024 - Instituto Superior Espíritu Santo</span>
+    </footer>
+    <script>
+        // Interacciones
+        let seeBtn = document.getElementsByClassName("seeBtn");
+        for (let i = 0; i < seeBtn.length; i++) {
+            seeBtn[i].addEventListener('click', function () {
+                const btnValue = seeBtn[i].value;
+                window.location.href = `/inscForm?taller=${btnValue}`;
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Taller</title>
+    <link rel="stylesheet" href="/css/eliminarTaller.css">
+    <link rel="stylesheet" href="/css/formato.css">
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+</head>
+<body>
+    <header class="head">
+        <section class="logo">
+            <img src="/imgs/logoIses.png" alt="logoIses" title="logoIses">
+        </section>
+        <nav class="txt">
+            <h2>Eliminar Taller de Apoyo</h2>
+        </nav>
+    </header>
+    <main class="ppal">
+    <h3>Talleres Creados: Prof <%= nombre %></h3>
+    <section class="tabla" id="tabla">
+        <% if (talleres.length > 0) { %>
+            <div class="fila">
+                <div class="campo nombre"><strong>Taller</strong></div>
+                <div class="campo edit"><strong>Acciones</strong></div>
+            </div>
+            <% talleres.forEach(function(taller) { %>
+                <div class="fila">
+                    <div class="campo nombre"><%= taller.taller %></div>
+                    <div class="campo edit">
+                        <button class="btn" data-id="<%= taller.id_taller %>">Eliminar</button>
+                    </div>
+                </div>
+            <% }) %>
+        <% } else { %>
+            <p>No hay talleres creados</p>
+        <% } %>
+    </main>
+    <footer>
+        <span class="copy">España 2729 - Posadas, Misiones - Argentina - Tel: 0376-4434070 - Copyright © 2024 - Instituto Superior Espíritu Santo</span>
+    </footer>
+    <script>
+        let editBtn = document.getElementsByClassName("btn");
+        for (let i = 0; i < editBtn.length; i++) {
+            editBtn[i].addEventListener('click', function () {
+                const confirmed = confirm("¿Estás seguro de que deseas eliminar este taller?");
+                if (confirmed) {
+                    console.log("Si");
+                    // Redirigir si confirma, usando el botón actual
+                    window.location.href = `/delete?taller=${editBtn[i].getAttribute('data-id')}`;
+                } else {
+                    console.log("No");
+                }
+            });
+        }
+    </script>
+</body>
+</html>

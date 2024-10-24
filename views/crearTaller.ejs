@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Taller</title>
+    <link rel="stylesheet" href="/css/crearTaller.css">
+    <link rel="stylesheet" href="/css/formato.css">
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+</head>
+<body>
+    <header class="head">
+        <section class="logo">
+            <img src="/imgs/logoIses.png" alt="logoIses" title="logoIses">
+        </section>
+        <nav class="txt">
+            <h2>Crear Taller de Apoyo</h2>
+        </nav>
+    </header>
+    <main class="ppal">
+        <section class="conteiner">
+            <h2 class="tit">Crear Taller</h2>
+            <form action="/created" id="createForm" method="post">
+                <label for="nombre">Nombre del Taller</label>
+                <input type="text" name="nombre" id="nombre">
+                <label for="nombre">Carrera del Taller</label>
+                <input type="text" name="carrera" id="carrera">
+                <label for="nombre">Curso del Taller</label>
+                <input type="number" name="curso" id="curso">
+                <label for="fecha">Fecha del Taller</label>
+                <input type="date" name="fecha" id="fecha">
+                <label for="hora">Hora del Taller (Inicio)</label>
+                <input type="time" name="hora" id="hora">
+                <input type="submit" value="Crear Taller" class="sbmt">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <span class="copy">España 2729 - Posadas, Misiones - Argentina - Tel: 0376-4434070 - Copyright © 2024 - Instituto Superior Espíritu Santo</span>
+    </footer>
+    <script src="/js/interacciones.js"></script>
+</body>
+</html>

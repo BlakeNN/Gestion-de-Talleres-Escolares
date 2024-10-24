@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incriptos</title>
+    <link rel="stylesheet" href="/css/formato.css">
+    <link rel="stylesheet" href="/css/inscriptos.css">
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+</head>
+<body>
+    <header class="head">
+        <section class="logo">
+            <img src="/imgs/logoIses.png" alt="logoIses" title="logoIses">
+        </section>
+        <nav class="txt">
+            <h2>Taller de Apoyo: <%= nameTaller %> </h2>
+        </nav>
+    </header>
+    <main class="ppal">
+        <h3>Alumnos Inscriptos al Taller: <%= nameTaller %></h3>
+        <section class="tabla">
+            <% if (insc.length > 0) { %>
+                <div class="fila">
+                    <div class="campo nombre"><strong>Nombre</strong></div>
+                    <div class="campo año"><strong>Año</strong></div>
+                </div>
+                <% insc.forEach(alumno => { %>
+                    <div class="fila">
+                        <div class="campo nombre"><%= alumno.user %></div>
+                        <div class="campo año"><%= alumno.curso %>°</div>
+                    </div>
+                <% }); %>
+            <% } else { %>
+                <p>No hay inscriptos para este taller</p>
+            <% } %>
+        </section>                
+    </main>
+    <footer>
+        <span class="copy">España 2729 - Posadas, Misiones - Argentina - Tel: 0376-4434070 - Copyright © 2024 - Instituto Superior Espíritu Santo</span>
+    </footer>
+</body>
+</html>

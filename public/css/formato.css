@@ -1,0 +1,93 @@
+/* Archivo CSS de Formato */
+/* Incluyo aca los estilos que se repiten en varias de las paginas, ademas de las variables de color y las fonts */
+/* VARS DE COLOR */
+:root {
+    --azul-ppal:#025891;
+    --azul-second:#006ab1;
+    --rojo-ppal: #F70209;
+    --gris-ppal: #54595F;
+    --blanco-ppal: #ececec;
+}
+/* FORMATO */
+@font-face {
+    font-family: Fr-Light;
+    src: url(../fonts/LibreFranklin-Light.ttf);
+}
+@font-face {
+    font-family: Fr-Mid;
+    src: url(../fonts/LibreFranklin-Medium.ttf);
+}
+@font-face {
+    font-family: Fr-Semi;
+    src: url(../fonts/LibreFranklin-SemiBold.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    min-height: 100vh;
+}
+/* HEADER */
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+    background-color: var(--azul-ppal);
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+    max-width: 100px;
+    max-height: 100px;
+}
+.txt {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    width: 75%;
+    height: 100%;
+    font-family: Fr-Light;
+    font-style: italic;
+    color: var(--blanco-ppal);
+}
+/* FIN HEADER */
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    color: var(--blanco-ppal);
+    font-family: Fr-Light;
+    font-size: 12px;
+    font-style: italic;
+    background-color: var(--azul-ppal);
+    width: 100%;
+    padding: .5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    margin: 2rem 0 0 0;
+}
+/* FIN FOOTER */
+@media (min-width: 550px) {
+    .logo img {
+        max-width: 80px;
+    }
+}

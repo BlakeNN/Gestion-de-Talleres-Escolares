@@ -1,0 +1,49 @@
+/* Archivo CSS de la Pagina: Inscriptos.html */
+body {
+    background-color: var(--blanco-ppal);
+    font-family: Fr-Mid;
+}
+.ppal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.ppal h3 {
+    align-self: flex-start;
+    margin: .5rem 0 0 .5rem;
+}
+.tabla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin: 0 .5rem 4rem .5rem;
+    border-collapse: collapse; /* Como una tabla */
+}
+
+.tabla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: calc(100% - 1rem);
+    margin: 2rem auto; 
+    border-radius: 5px; 
+    overflow: hidden; 
+    border: 2px solid var(--azul-ppal); 
+}
+
+.fila {
+    display: contents; /* Alinear celdas en Grid */
+}
+
+.campo {
+    padding: 0.5rem;
+    border: 2px solid var(--azul-ppal); 
+    background-color: var(--blanco-ppal);
+    margin: 0; 
+}
+
+.campo.nombre {
+    border-right: 2px solid var(--azul-ppal); 
+}

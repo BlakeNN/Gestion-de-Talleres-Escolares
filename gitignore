@@ -1,0 +1,6 @@
+# Ignorar archivos de entorno
+.env
+
+# Ignorar la carpeta de módulos de NodeJS
+node_modules/
+

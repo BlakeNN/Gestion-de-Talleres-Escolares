@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISES - Talleres de Apoyo</title>
+    <link rel="stylesheet" href="/css/formato.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+</head>
+<body>
+    <header class="head">
+        <section class="logo">
+            <img src="/imgs/logoIses.png" alt="logoIses" title="logoIses">
+        </section>
+        <nav class="txt">
+            <h2>ISES - Talleres de Apoyo</h2>
+        </nav>
+    </header>
+    <main class="ppal">
+        <form action="/validar" method="post" id="loginForm">
+            <label for="user">Usuario</label>
+            <input type="text" name="user" id="user">
+            <label for="pass">Contraseña</label>
+            <div class="pass">
+                <input type="password" name="pass" id="pass">
+                <button class="showHide" id="passShown"><img src="/imgs/seePass.png" title="Mostrar/Ocultar" id="togglePass"></button>
+            </div>
+            <input type="submit" value="Ingresar" class="sbmt">
+        </form>
+    </main>
+    <footer>
+        <span class="copy">España 2729 - Posadas, Misiones - Argentina - Tel: 0376-4434070 - Copyright © 2024 - Instituto Superior Espíritu Santo</span>
+    </footer>
+    <script src="/js/form.js"></script>
+</body>
+</html>

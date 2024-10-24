@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISES - Talleres de Apoyo</title>
+    <link rel="stylesheet" href="/css/formato.css">
+    <link rel="stylesheet" href="/css/profesor.css">
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+</head>
+<body>
+    <header class="head">
+        <section class="logo">
+            <img src="/imgs/logoIses.png" alt="logoIses" title="logoIses">
+        </section>
+        <nav class="txt">
+            <h2>Talleres de Apoyo : Profesor <%= nombre %></h2>
+        </nav>
+    </header>
+    <main class="ppal">
+        <section class="conteiner-talleres">
+            <h3>Tus Talleres Actuales:</h3>
+            <section class="arts">
+                <% if (talleres.length > 0) { %>
+                    <% talleres.forEach(function(taller) { %>
+                        <article class="box">
+                            <h4><%= taller.taller %></h4>
+                            <ul class="horario">
+                                <li class="fecha">Fecha: <%= taller.fecha %></li>
+                                <li class="hora">Hora: <%= taller.hora %></li>
+                            </ul>
+                            <button class="btn-taller" value="<%= taller.id_taller %>">Ver Alumnos</button>
+                        </article>
+                    <% }) %>
+                <% } else { %>
+                    <p>No tienes talleres asignados.</p>
+                <% } %>
+            </section>
+        </section>
+        <section class="btns">
+            <button id="addTaller">Agregar Taller</button>
+            <button id="editTaller">Editar Taller</button>
+            <button id="delTaller">Eliminar Taller</button>
+        </section>
+    </main>
+    <footer>
+        <span class="copy">España 2729 - Posadas, Misiones - Argentina - Tel: 0376-4434070 - Copyright © 2024 - Instituto Superior Espíritu Santo</span>
+    </footer>
+    <script src="/js/interacciones.js"></script>
+</body>
+</html>

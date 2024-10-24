@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incribirse a un Taller</title>
+    <link rel="stylesheet" href="/css/alumno.css">
+    <link rel="stylesheet" href="/css/formato.css">
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+</head>
+<body>
+    <header class="head">
+        <section class="logo">
+            <img src="/imgs/logoIses.png" alt="logoIses" title="logoIses">
+        </section>
+        <nav class="txt">
+            <h2>Inscribirse a Taller de Apoyo</h2>
+        </nav>
+    </header>
+    <main class="ppal">
+        <% if (tallerData.length > 0) { %>
+            <% tallerData.forEach(function(taller) { %>
+                <section class="conteiner" id="formAnotarse">
+                    <h2 class="tit">Taller: <%= taller.taller %> </h2>
+                    <form action="/insc" method="post">
+                        <ul class="horario">
+                            <li class="fecha">Fecha: <%= taller.fecha %> </li>
+                            <li class="hora">Hora: <%= taller.hora %> </li>
+                            <input type="hidden" name="tallerId" value="<%= taller.id_taller %>">
+                            <li class="disclaimer">"Anotese solamente a talleres a los que este seguro que va a asistir"</li>
+                        </ul>
+                        <section class="opc">
+                            <button class="cancel" id="cancel">Cancelar</button>
+                            <input type="submit" value="Anotarse" class="sbmt">
+                        </section>
+                    </form>
+                </section>
+            <% }) %>
+        <% } else { %>
+            <p>Error Accediendo al Formulario</p>
+        <% } %>
+    </main>
+    <footer>
+        <span class="copy">España 2729 - Posadas, Misiones - Argentina - Tel: 0376-4434070 - Copyright © 2024 - Instituto Superior Espíritu Santo</span>
+    </footer>
+    <script>
+        let cancel = document.getElementById("cancel");
+        cancel.addEventListener('click', (event) => {
+            event.preventDefault();
+            window.location.replace("/alumno");
+        })
+    </script>
+</body>
+</html>

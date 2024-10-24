@@ -1,0 +1,134 @@
+/* Archivo CSS de la Pagina: Profesor.html */
+body {
+    background-color: var(--blanco-ppal);
+}
+.ppal {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    font-family: Fr-Mid;
+}
+.conteiner-talleres {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.conteiner-talleres h3{
+    align-self: flex-start;
+    margin: .5rem 0 0 .5rem;
+}
+.arts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 5px solid var(--azul-ppal);
+    border-radius: 15px;
+    margin: .5rem 0;
+    padding: 1rem;
+    width: 65%;
+    height: auto;
+    max-width: 350px;
+    background-color: var(--azul-second);
+    color: var(--blanco-ppal);
+}
+.box h4 {
+    text-align: center;
+    font-family: Fr-Semi;
+}
+.horario {
+    list-style: none;
+}
+.horario > * {
+    margin: .5rem;
+}
+.btn-taller {
+    background-color: var(--azul-ppal);
+    margin: .5rem;
+    width: 80%;
+    align-self: center;
+    border-radius: 15px;
+    color: var(--blanco-ppal);
+    font-family: Fr-Semi;
+    transition: background-color 0.3s ease, transform 0.2s ease;  
+}
+.btn-taller:hover {
+    background-color: #014067;  
+    transform: scale(1.05);
+    cursor: pointer;     
+}
+.btn-taller:active {
+    transform: scale(0.95);     
+    background-color: #013553; 
+}
+.btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0 0 4rem 0;
+}
+.btns button {
+    background-color: var(--azul-second);
+    margin: .5rem;
+    width: 80%;
+    height: 4rem;
+    border-radius: 15px;
+    color: var(--blanco-ppal);
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;  
+}
+.btns > *:hover {
+    background-color: #00538d;  
+    transform: scale(1.02);
+    cursor: pointer;
+}
+.btns > *:active {
+    transform: scale(0.95);     
+    background-color: #003e6a;
+}
+/* FIN MAIN */
+@media (min-width: 768px) {
+    .arts {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .box {
+        min-height: 200px;
+        margin: .5rem;
+    }
+    .horario > * {
+        margin: 1.5rem 0;
+    }
+    .btn-taller {
+        position: absolute;
+        height: 2rem;
+        width: 45%;
+        bottom: 1rem;
+    }
+    .btns {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}
+@media (min-width: 1200px) {
+    
+}

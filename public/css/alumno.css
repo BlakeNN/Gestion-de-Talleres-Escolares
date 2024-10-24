@@ -1,0 +1,174 @@
+body {
+    background-color: var(--blanco-ppal);
+    font-family: Fr-Mid;
+}
+.ppal {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.conteiner-talleres, .anotados {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.conteiner-talleres h3, .anotados h3 {
+    align-self: flex-start;
+    margin: .5rem 0 0 .5rem;
+}
+.arts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+}
+.anotados .arts {
+    margin: 0 0 4rem 0;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 5px solid var(--azul-ppal);
+    border-radius: 15px;
+    margin: .5rem 0;
+    padding: 1rem;
+    width: 65%;
+    height: auto;
+    max-width: 350px;
+    background-color: var(--azul-second);
+    color: var(--blanco-ppal);
+}
+.box h4 {
+    text-align: center;
+    font-family: Fr-Semi;
+}
+.horario {
+    list-style: none;
+}
+.horario > * {
+    margin: .5rem;
+}
+.disclaimer {
+    font-family: Fr-Light;
+}
+.btn-taller {
+    background-color: var(--azul-ppal);
+    margin: .5rem;
+    width: 80%;
+    align-self: center;
+    border-radius: 15px;
+    color: var(--blanco-ppal);
+    font-family: Fr-Semi;
+}
+.btn-taller:hover {
+    background-color: #014067;  
+    transform: scale(1.05);
+    cursor: pointer;     
+}
+.btn-taller:active {
+    transform: scale(0.95);     
+    background-color: #013553; 
+}
+.visible {
+    display: flex;
+}
+
+/* FORM PARA ANOTARSE */
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 2rem 0 4rem 0;
+    padding: .5rem;
+    width: 80%;
+    height: auto;
+    border: 5px solid var(--azul-ppal);
+    border-radius: 15px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 80%;
+}
+.tit {
+    text-align: center;
+    align-self: center;
+    height: 20%;
+    margin: 0 0 .5rem 0;
+}
+.sbmt, .cancel {
+    width: 40%;
+    border: 2px solid var(--azul-ppal);
+    border-radius: 10px;
+    padding: 2px;
+    margin: 5px 0;
+    color: var(--gris-ppal);
+    background-color: var(--blanco-ppal);
+    font-family: Fr-Semi;
+    align-self: flex-end;
+    justify-self: flex-end;
+    max-width: 125px;
+}
+.horario > * {
+    margin: 15px 0;
+}
+.opc {
+    align-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.opc > * {
+    margin: 0 .5rem 0 0;
+}
+.sbmt, .cancel {
+    width: 50%;
+    transition: border-color 0.3s ease, transform 0.2s ease;
+}
+.sbmt:hover, .cancel:hover {
+    border-color: #8a9295; 
+    transform: scale(1.02); 
+    cursor: pointer;
+}
+.sbmt:active, .cancel:active {
+    transform: scale(0.98);  
+    border-color: #4a4e50;    
+}
+@media (min-width: 750px) {
+    .conteiner {
+        max-width: 600px;
+    }
+}
+@media (min-width: 768px) {
+    .arts {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .box {
+        min-height: 200px;
+        margin: .5rem;
+    }
+    .horario > * {
+        margin: 1.5rem 0;
+    }
+    .btn-taller {
+        position: absolute;
+        height: 2rem;
+        width: 45%;
+        bottom: 1rem;
+    }
+}

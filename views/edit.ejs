@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Taller</title>
+    <link rel="stylesheet" href="/css/formato.css">
+    <link rel="stylesheet" href="/css/editarTaller.css">
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+</head>
+<body>
+    <header class="head">
+        <section class="logo">
+            <img src="/imgs/logoIses.png" alt="logoIses" title="logoIses">
+        </section>
+        <nav class="txt">
+            <h2>Editar Taller</h2>
+        </nav>
+    </header>
+    <main class="ppal">
+        <% if (tallerData.length > 0) { %>
+            <% tallerData.forEach(function(taller) { %>
+                <section class="conteiner" id="formAnotarse">
+                    <h2 class="tit">Taller: <%= taller.taller %> </h2>
+                    <form action="/edited?taller=<%= taller.id_taller%>" method="post">
+                        <label for="nombre">Nombre del Taller</label>
+                        <input type="text" name="nombre" id="nombre" value="<%= taller.taller %>">
+                        <label for="nombre">Carrera del Taller</label>
+                        <input type="text" name="carrera" id="carrera" value="<%= taller.carreraTaller %>">
+                        <label for="nombre">Curso del Taller</label>
+                        <input type="number" name="curso" id="curso" value="<%= taller.cursoTaller %>">
+                        <label for="fecha">Fecha del Taller</label>
+                        <input type="date" name="fecha" id="fecha" value="<%= fecha[0].fecha.toISOString().split('T')[0] %>">
+                        <label for="hora">Hora del Taller</label>
+                        <input type="time" name="hora" id="hora" value="<%= taller.hora || '' %>">
+                        <section class="opc">
+                            <button class="cancel" id="cancel">Cancelar</button>
+                            <input type="submit" value="Aceptar" class="sbmt">
+                        </section>
+                    </form>
+                </section>
+            <% }) %>
+        <% } else { %>
+            <p>Error Accediendo al Formulario</p>
+        <% } %>
+    </main>
+    <footer>
+        <span class="copy">España 2729 - Posadas, Misiones - Argentina - Tel: 0376-4434070 - Copyright © 2024 - Instituto Superior Espíritu Santo</span>
+    </footer>
+    <script>
+        let cancel = document.getElementById("cancel");
+        cancel.addEventListener('click', (event) => {
+            event.preventDefault();
+            window.location.replace("/profesor");
+        })
+    </script>
+</body>
+</html>
