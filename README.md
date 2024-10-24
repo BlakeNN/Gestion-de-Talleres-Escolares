@@ -8,12 +8,12 @@ Creado por: Reinert Lucas Iván (BlakeNN) - 1er Año
 3. [Instalacion](#Instalacion)
 
 ##Caracteristicas
-Esta Aplicacion Web esta diseñada para la *Creacion* y *Gestion* de Talleres de Apoyo Escolares
+Esta Aplicacion Web esta diseñada para la **Creacion** y **Gestion** de Talleres de Apoyo Escolares
 La misma permite:  
 - Como Alumno:  
 Ver y Anotarse a los Talleres disponibles.
-- Como Profesor:
-Ver los Alumnos inscriptos a los Talleres, *Crear* nuevos Talleres, *Editar* los ya existentes y *Eliminarlos*
+- Como Profesor:  
+Ver los Alumnos inscriptos a los Talleres, **Crear** nuevos Talleres, **Editar** los ya existentes y **Eliminarlos**
 
 ## Introduccion
 El siguiente es mi proyecto de fin de año para la Tec. en Apps y Pags Web del ISES.
