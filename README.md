@@ -10,9 +10,9 @@ Creado por: Reinert Lucas Iván (BlakeNN) - 1er Año
 ## Caracteristicas
 Esta Aplicacion Web esta diseñada para la **Creacion** y **Gestion** de Talleres de Apoyo Escolares
 La misma permite:  
-- Como Alumno:  
+- Como **Alumno**:  
 Ver y Anotarse a los Talleres disponibles.
-- Como Profesor:  
+- Como **Profesor**:  
 Ver los Alumnos inscriptos a los Talleres, **Crear** nuevos Talleres, **Editar** los ya existentes y **Eliminarlos**
 
 ## Introduccion
@@ -56,5 +56,5 @@ Para elaborarlo use las siguientes tecnologias:
   http://localhost:3000
   Conexion Exitosa a la BD
 ```
-- Si presionas Ctrl + Click sobre la Segunda linea, abriras tu navegador y deberías de ver esta Pagina:
+Si presionas Ctrl + Click sobre la Segunda linea, abriras tu navegador y deberías de ver esta Pagina:  
 ![Login-Img](https://github.com/BlakeNN/Gestion-de-Talleres-Escolares/blob/c6241525745d4c061412f20e9bc8912e11d0f4b6/login.png)
