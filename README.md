@@ -6,6 +6,7 @@ Creado por: Reinert Lucas Iván (BlakeNN) - 1er Año
 1. [Introduccion](#Introduccion)
 2. [Caracteristicas](#Caracteristicas)
 3. [Instalacion](#Instalacion)
+4. [Licencia](#Licencia)
 
 
 ## Introduccion
@@ -59,3 +60,6 @@ Ver los Alumnos inscriptos a los Talleres, **Crear** nuevos Talleres, **Editar**
 ```
 Si presionas Ctrl + Click sobre la Segunda linea, abriras tu navegador y deberías de ver esta Pagina:  
 ![Login-Img](https://github.com/BlakeNN/Gestion-de-Talleres-Escolares/blob/c6241525745d4c061412f20e9bc8912e11d0f4b6/login.png)
+
+## Licencia
+El presente proyecto está bajo la Licencia de [MIT](https://opensource.org/licenses/MIT).
