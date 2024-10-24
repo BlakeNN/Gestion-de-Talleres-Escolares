@@ -65,5 +65,8 @@ Ver los Alumnos inscriptos a los Talleres, **Crear** nuevos Talleres, **Editar**
 Si presionas Ctrl + Click sobre la Segunda linea, abriras tu navegador y deberías de ver esta Pagina:  
 ![Login-Img](https://github.com/BlakeNN/Gestion-de-Talleres-Escolares/blob/c6241525745d4c061412f20e9bc8912e11d0f4b6/login.png)
 
+## NOTA
+Todos los usuarios (salvo el primero) tienen como contraseña 123, solo que en la base de datos estan hasheadas.
+
 ## Licencia
 El presente proyecto está bajo la Licencia del MIT (https://opensource.org/licenses/MIT).
