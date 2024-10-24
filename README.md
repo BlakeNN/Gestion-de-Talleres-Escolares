@@ -62,4 +62,4 @@ Si presionas Ctrl + Click sobre la Segunda linea, abriras tu navegador y deberí
 ![Login-Img](https://github.com/BlakeNN/Gestion-de-Talleres-Escolares/blob/c6241525745d4c061412f20e9bc8912e11d0f4b6/login.png)
 
 ## Licencia
-El presente proyecto está bajo la Licencia de [MIT](https://opensource.org/licenses/MIT).
+El presente proyecto está bajo la Licencia del MIT (https://opensource.org/licenses/MIT).
