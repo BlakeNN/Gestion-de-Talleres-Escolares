@@ -22,17 +22,17 @@ Para elaborarlo use las siguientes tecnologias:
 - Bcrypt (Hasheo de Contraseñas)
 - DotEnv (Variables de Entorno)
 ## Instalacion
--Instala NodeJS
--Inicializa el Proyecto
+- Instala NodeJS
+- Inicializa el Proyecto
   `npm init`
--Instala los Modulos Necesarios
+- Instala los Modulos Necesarios
   `npm i express express-session mysql dotenv bcrypt`
--Importa la Base de Datos de la Carpeta "DB" y colocale el nombre que desees
--Configura las Variables de Entorno:
+- Importa la Base de Datos de la Carpeta "DB" y colocale el nombre que desees
+- Configura las Variables de Entorno:
 `DB_HOST='localhost'
 DB_USER='root'
 DB_PASS=
 DB_NAME='isesTalleres'
 PORT=3000`
--Inicia tu Base de Datos y Ejecuta el Archivo index.js
+- Inicia tu Base de Datos y Ejecuta el Archivo index.js
 `node index.js`
