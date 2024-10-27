@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BlakeNN/Proyecto-Final"
+    "url": "git+https://github.com/BlakeNN/Gestion-de-Talleres-Escolares"
   },
   "author": "Reinert Lucas Iván",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/BlakeNN/Proyecto-Final/issues"
+    "url": "https://github.com/BlakeNN/Gestion-de-Talleres-Escolares/issues"
   },
-  "homepage": "https://github.com/BlakeNN/Proyecto-Final#readme",
+  "homepage": "https://github.com/BlakeNN/Gestion-de-Talleres-Escolares/#readme",
   "dependencies": {
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
