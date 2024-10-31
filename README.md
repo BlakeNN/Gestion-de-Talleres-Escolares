@@ -40,7 +40,7 @@ Ver los Alumnos inscriptos a los Talleres, Crear nuevos Talleres, Editar los ya 
 - Abre una consola en la ruta de la carpeta donde tienes la aplicacion
 - Instala los Modulos Necesarios  
   ```bash
-  npm i express express-session mysql dotenv bcrypt
+  npm i express express-session ejs mysql dotenv bcrypt
 - Importa la Base de Datos de la Carpeta "DB" y colocale el nombre que desees (Recuerda cambiarlo en tus variables de Entorno)
 - Crea un archivo .env en la raiz del proyecto y configura las Variables de Entorno:  
 ```bash
