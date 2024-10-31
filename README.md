@@ -59,15 +59,15 @@ Ver los Alumnos inscriptos a los Talleres, Crear nuevos Talleres, Editar los ya 
   Servidor Escuchando el Puerto 3000
   http://localhost:3000
   Conexion Exitosa a la BD
-```
+```  
+Si presionas Ctrl + Click sobre la Segunda linea, abriras tu navegador y deberías de ver esta Pagina:  
+![Login-Img](https://github.com/BlakeNN/Gestion-de-Talleres-Escolares/blob/c6241525745d4c061412f20e9bc8912e11d0f4b6/login.png)
+
 - Para visualizarlo desde el Celular/Tablet u otro Dispositivo:
   - Conectado a la misma red.
   - Obten tu IPv4 EJ: 192.168.X.X
   - En el navegador del dispositivo escribe: 192.168.X.X:3000
-  - El :3000 es el puerto en el que esta la App, si lo cambiaste a otro, pon ese otro.  
-
-Si presionas Ctrl + Click sobre la Segunda linea, abriras tu navegador y deberías de ver esta Pagina:  
-![Login-Img](https://github.com/BlakeNN/Gestion-de-Talleres-Escolares/blob/c6241525745d4c061412f20e9bc8912e11d0f4b6/login.png)
+  - El :3000 es el puerto en el que esta la App, si lo cambiaste a otro, pon ese otro.
 
 ## Uso
 Despues de Instalar todo e Iniciar el programa verás el formulario de LogIn.
