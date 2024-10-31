@@ -6,7 +6,7 @@ Creado por: Reinert Lucas Iván (BlakeNN) - 1er Año
 
 ## Indice
 1. [Introduccion](#Introduccion)
-2. [Caracteristicas](#Caracteristicas)
+2. [Caracteristicas y Uso](#Caracteristicas_y_Uso)
 3. [Instalacion](#Instalacion)
 4. [Licencia](#Licencia)
 
@@ -25,7 +25,7 @@ Para elaborarlo use las siguientes tecnologias:
 - Bcrypt (Hasheo de Contraseñas)
 - DotEnv (Variables de Entorno)
 
-## Caracteristicas
+## Caracteristicas y Uso
 Esta Aplicacion Web esta diseñada para la **Creacion** y **Gestion** de Talleres de Apoyo Escolares
 La misma permite:  
 - Como **Alumno**:  
