@@ -67,6 +67,6 @@ Si presionas Ctrl + Click sobre la Segunda linea, abriras tu navegador y deberí
 Despues de Instalar todo e Iniciar el programa verás el formulario de LogIn.
 Algunos de los Usuarios validos (Se pueden ver en el archivo de la base de datos) con sus Contraseñas son:
  -  Juan Carlos Perez: Profesor, Contraseña: 123
- -  Juan Carlos Gomez: Alumno, Contraseña: 123
+ -  Juan Carlos Gomez: Alumno, Contraseña: 123  
 Estos son dos usuarios que tienen varios datos cargados y permiten ver mejor la aplicacion, pero los otros tambien funcionan.
 **Nota**: Las contraseñas en la Base de Datos estan hasheadas, pero son **TODAS** la misma (123).
