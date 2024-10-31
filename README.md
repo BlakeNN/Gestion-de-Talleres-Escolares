@@ -7,10 +7,8 @@ Creado por: Reinert Lucas Iván (BlakeNN) - 1er Año
 ## Indice
 1. [Introduccion](#Introduccion)
 2. [Caracteristicas](#Caracteristicas)
-3. [Guia de Uso](#Uso)
-4. [Instalacion](#Instalacion)
-5. [Licencia](#Licencia)
-
+3. [Instalacion](#Instalacion)
+4. [Guia de Uso](#Uso)
 
 ## Introduccion
 El siguiente es mi proyecto de fin de año para la Tec. en Apps y Pags Web del ISES.
@@ -32,28 +30,25 @@ La misma permite:
 - Como **Alumno**:  
 Ver y Anotarse a los Talleres disponibles.
 - Como **Profesor**:  
-Ver los Alumnos inscriptos a los Talleres, **Crear** nuevos Talleres, **Editar** los ya existentes y **Eliminarlos**
-
-##Uso
+Ver los Alumnos inscriptos a los Talleres, Crear nuevos Talleres, Editar los ya existentes y Eliminarlos
 
 ## Instalacion
-- Instala NodeJS
+- Instala NodeJS desde su Web Oficial
   ```bash
   https://nodejs.org/en/
-- Inicializa el Proyecto  
-  ```bash
-  npm init
+- Descarga los archivos del Repositorio y Descomprimelos en una carpeta
+- Abre una consola en la ruta de la carpeta donde tienes la aplicacion
 - Instala los Modulos Necesarios  
   ```bash
   npm i express express-session mysql dotenv bcrypt
-- Importa la Base de Datos de la Carpeta "DB" y colocale el nombre que desees
-- Configura las Variables de Entorno:  
+- Importa la Base de Datos de la Carpeta "DB" y colocale el nombre que desees (Recuerda cambiarlo en tus variables de Entorno)
+- Crea un archivo .env en la raiz del proyecto y configura las Variables de Entorno:  
 ```bash
   DB_HOST='localhost'
   DB_USER='root'
   DB_PASS=
-  DB_NAME='isesTalleres'
-  PORT=3000
+  DB_NAME='isesTalleres' #Nombre de la base de datos
+  PORT=3000 #Si el puerto esta ocupado cambialo aquí
 ```
 - Inicia la Base de Datos y Ejecuta el Archivo index.js  
 ```bash
@@ -68,8 +63,10 @@ Ver los Alumnos inscriptos a los Talleres, **Crear** nuevos Talleres, **Editar**
 Si presionas Ctrl + Click sobre la Segunda linea, abriras tu navegador y deberías de ver esta Pagina:  
 ![Login-Img](https://github.com/BlakeNN/Gestion-de-Talleres-Escolares/blob/c6241525745d4c061412f20e9bc8912e11d0f4b6/login.png)
 
-## NOTA
-Todos los usuarios (salvo el primero) tienen como contraseña 123, solo que en la base de datos estan hasheadas.
-
-## Licencia
-El presente proyecto está bajo la Licencia del MIT (https://opensource.org/licenses/MIT).
+## Uso
+Despues de Instalar todo e Iniciar el programa verás el formulario de LogIn.
+Algunos de los Usuarios validos (Se pueden ver en el archivo de la base de datos) con sus Contraseñas son:
+ -  Juan Carlos Perez: Profesor, Contraseña: 123
+ -  Juan Carlos Gomez: Alumno, Contraseña: 123
+Estos son dos usuarios que tienen varios datos cargados y permiten ver mejor la aplicacion, pero los otros tambien funcionan.
+**Nota**: Las contraseñas en la Base de Datos estan hasheadas, pero son **TODAS** la misma (123).
