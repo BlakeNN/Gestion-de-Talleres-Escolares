@@ -64,10 +64,11 @@ Si presionas Ctrl + Click sobre la Segunda linea, abriras tu navegador y deberí
 ![Login-Img](https://github.com/BlakeNN/Gestion-de-Talleres-Escolares/blob/c6241525745d4c061412f20e9bc8912e11d0f4b6/login.png)
 
 - Para visualizarlo desde el Celular/Tablet u otro Dispositivo:
-  - Conectado a la misma red.
-  - Obten tu IPv4 EJ: 192.168.X.X
-  - En el navegador del dispositivo escribe: 192.168.X.X:3000
-  - El :3000 es el puerto en el que esta la App, si lo cambiaste a otro, pon ese otro.
+  - Conectalo a la misma red.
+  - Obten tu IPv4
+    - EJ: 192.168.0.0
+  - En el navegador del dispositivo escribe: 192.168.0.0:3000
+  - El :3000 es el puerto que esta escuchando el servidor, si lo cambiaste a otro, coloca ese.
 
 ## Uso
 Despues de Instalar todo e Iniciar el programa verás el formulario de LogIn.
