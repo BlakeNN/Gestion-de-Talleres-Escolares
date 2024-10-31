@@ -6,9 +6,10 @@ Creado por: Reinert Lucas Iván (BlakeNN) - 1er Año
 
 ## Indice
 1. [Introduccion](#Introduccion)
-2. [Caracteristicas y Uso](#Caracteristicas_y_Uso)
-3. [Instalacion](#Instalacion)
-4. [Licencia](#Licencia)
+2. [Caracteristicas](#Caracteristicas)
+3. [Guia de Uso](#Uso)
+4. [Instalacion](#Instalacion)
+5. [Licencia](#Licencia)
 
 
 ## Introduccion
@@ -25,13 +26,15 @@ Para elaborarlo use las siguientes tecnologias:
 - Bcrypt (Hasheo de Contraseñas)
 - DotEnv (Variables de Entorno)
 
-## Caracteristicas y Uso
+## Caracteristicas
 Esta Aplicacion Web esta diseñada para la **Creacion** y **Gestion** de Talleres de Apoyo Escolares
 La misma permite:  
 - Como **Alumno**:  
 Ver y Anotarse a los Talleres disponibles.
 - Como **Profesor**:  
 Ver los Alumnos inscriptos a los Talleres, **Crear** nuevos Talleres, **Editar** los ya existentes y **Eliminarlos**
+
+##Uso
 
 ## Instalacion
 - Instala NodeJS
